@@ -1,0 +1,50 @@
+.proves {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.proves h2 {
+    font-size: 3rem;
+    color: var(--secondary-color);
+}
+
+.proves-container {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.prove-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.prove-profile h3 {
+    font-size: 1.6rem;
+}
+
+.prove {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 30rem;
+    background-color: var(--bg-color);
+    margin: 1rem;
+    border-radius: 2rem;
+}
+
+.prove-photo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 3px solid #3c8d7d;
+}

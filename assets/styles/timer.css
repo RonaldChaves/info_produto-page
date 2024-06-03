@@ -1,0 +1,107 @@
+.timer-container {
+    background-color: #e43838;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+}
+
+.timer-title {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.timer-regresive {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    height: 100%;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 0.4rem;
+    padding: 1rem;
+    border-radius: 15px;
+    background: #d53434;
+    box-shadow: inset 7px 7px 14px #8a2222,
+        inset -7px -7px 14px #ff4646;
+}
+
+.timer span {
+    color: #fff;
+    font-size: 2rem;
+    text-align: justify;
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .timer-title {
+        font-size: 1.4rem;
+    }
+
+    .timer {
+        width: 3rem;
+        height: 3rem;
+        margin: 0 0.3rem;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .timer span {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .timer-title {
+        font-size: 1rem;
+    }
+
+    .timer {
+        width: 3rem;
+        height: 3rem;
+        margin: 0 0.2rem;
+        padding: 1rem;
+        border-radius: 1.2rem;
+
+    }
+
+    .timer span {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .timer-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .timer {
+        width: 2.6rem;
+        height: 2.6rem;
+        margin: 0 0.2rem;
+        padding: 1rem;
+        border-radius: 1.2rem;
+
+    }
+
+    .timer span {
+        font-size: 1rem;
+    }
+}

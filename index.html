@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="assets/styles/imports.css">
+
+    <!-- Font Google Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Info Produto</title>
+</head>
+
+<body>
+
+    <div class="timer-container disabled">
+
+        <div class="timer-title">
+
+            <h2>
+                O TEMPO ESTÁ ACABANDO...
+            </h2>
+
+        </div>
+        <main class="timer-regresive ">
+
+            <div class="timer">
+                <span class="decimal-minutes">1</span>
+            </div>
+            <div class="timer">
+                <span class="unitary-minutes">4</span>
+            </div>
+            :
+            <div class="timer">
+                <span class="decimal-seconds">5</span>
+            </div>
+            <div class="timer">
+                <span class="unitary-seconds">9</span>
+            </div>
+
+        </main>
+        <div class="timer-title">
+
+            <h2>
+                ADQUIRA JÁ!
+            </h2>
+
+        </div>
+
+    </div>
+
+    <header class="title-container">
+
+        <div class="text-box">
+
+            <h1 class="main-title">
+                SEJA VOCÊ MAIS UM MILIONÁRIO!
+            </h1>
+            <p class="main-subtitle">
+                Corra atrás daquilo que te trará sucesso e uma vida dígna
+            </p>
+
+
+        </div>
+        <div class="video-box">
+
+            <iframe class="main-video" width="560" height="315"
+                src="https://www.youtube.com/embed/Rd4ENSpzEsY?si=Qop8JRj-zxYyuXAx" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>
+                Assista o vídeo acima &UpArrow;
+            </p>
+
+        </div>
+
+    </header>
+
+    <section class="proves">
+
+        <h2>
+            Provas Sociais
+        </h2>
+
+        <div class="proves-container">
+
+            <div class="prove">
+
+                <div class="prove-profile">
+                    <img src="assets/img/perfil-1.jpg" alt="perfil 1" class="prove-photo">
+                    <h3>
+                        Roberto Fagundes, 46
+                    </h3>
+                </div>
+                <div class="prove-print">
+                    <img src="assets/img/prove-1.png" alt="prove 1" class="print">
+                </div>
+
+            </div>
+            <div class="prove">
+
+                <div class="prove-profile">
+                    <img src="assets/img/perfil-2.jpg" alt="perfil 2" class="prove-photo">
+                    <h3>
+                        Marta Menesses, 32
+                    </h3>
+                </div>
+                <div class="prove-print">
+                    <img src="assets/img/prove-2.png" alt="" class="print">
+                </div>
+
+            </div>
+            <div class="prove">
+
+                <div class="prove-profile">
+                    <img src="assets/img/perfil-3.jpg" alt="perfil 3" class="prove-photo">
+                    <h3>
+                        Eugênio Brito, 28
+                    </h3>
+                </div>
+                <div class="prove-print">
+                    <img src="assets/img/prove-1.png" alt="prove 3" class="print">
+                </div>
+
+            </div>
+            <div class="prove">
+
+                <div class="prove-profile">
+                    <img src="assets/img/perfil-1.jpg" alt="perfil 4" class="prove-photo">
+                    <h3>
+                        Leonardo Chaves, 41
+                    </h3>
+                </div>
+                <div class="prove-print">
+                    <img src="assets/img/prove-2.png" alt="prove 4" class="print">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="form">
+
+        <div class="form-container">
+
+            <h3>
+                Formulário de inscrição:
+            </h3>
+            <form action="https://formsubmit.co/6ba64e965270834efe58175de88fb052" method="POST">
+                <div class="email-box">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" oninput="verifyEmail()" required>
+
+                </div>
+                <div class="message-box">
+
+                    <label for="message">Mensagem</label>
+                    <input type="text" name="message" id="message" oninput="verifyMessage()" required>
+
+                </div>
+                <div class="wpp-box">
+
+                    <label for="wpp">WhatsApp</label>
+                    <input type="tel" name="whatsapp" id="wpp" oninput="verifyPhone()" placeholder="31 999998888"
+                        required>
+                    <p>
+                        Formato: 31 999998888
+                    </p>
+
+                </div>
+                <button id="send" type="submit">Enviar</button>
+            </form>
+
+        </div>
+    </section>
+
+    <section class="benefics">
+
+
+
+    </section>
+
+    <footer class="footer">
+
+        <h3>
+            Entre em contato:
+        </h3>
+
+        <div class="icons-box">
+            <div class="icon">
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <span>Instagram</span>
+            </div>
+            <div class="icon">
+                <a href="">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <span>GitHub</span>
+            </div>
+            <div class="icon">
+                <a href="">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <span>LinkedIn</span>
+            </div>
+        </div>
+        <div class="copy">
+
+            <p class="copy-text">
+                &copy;Todos os direitos reservados.
+            </p>
+
+        </div>
+    </footer>
+
+
+    <script src="assets/scripts/timer.js"></script>
+    <script src="assets/scripts/form.js"></script>
+</body>
+
+</html>
